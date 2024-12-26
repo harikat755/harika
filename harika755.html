@@ -3,22 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Harika's Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 10px 20px;
+        }
+        nav ul li a {
+            color: white;
+            font-size: 1.2em;
+        }
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            margin: 0 auto;
+            max-width: 1000px;
+            text-align: left;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        /* Skills Section */
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .skills ul li {
+            background-color: #4CAF50;
+            color: white;
+            margin: 5px 10px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1.1em;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .project-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .project-card h3 {
+            color: #4CAF50;
+            font-size: 1.5em;
+        }
+        .project-card p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
-        <h1>Welcome to My Web Page</h1>
-        <p>This is a simple page created with HTML and CSS!</p>
+        <h1>Harika's Portfolio</h1>
+        <p>Computer Science Engineering Student | Web Developer | Problem Solver</p>
     </header>
-    
-    <section class="content">
-        <h2>About Me</h2>
-        <p>Hi, I'm Harika! I'm learning web development using HTML and CSS.</p>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Hello, I'm Harika, a Computer Science Engineering student with a passion for coding and web development. I am proficient in multiple programming languages such as C, Java, and Python, and I am eager to learn new technologies. I enjoy solving problems and working on innovative projects.</p>
+        </div>
     </section>
-    
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C Programming</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Web Development</h3>
+                <p>Developed a personal website using HTML, CSS, and JavaScript. Designed the UI and implemented interactive features.</p>
+            </div>
+            <div class="project-card">
+                <h3>Task Manager App</h3>
+                <p>Created a simple task manager app using Java, allowing users to add, remove, and prioritize tasks.</p>
+            </div>
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>Built a weather app using Python and an external API to display real-time weather information based on location.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="content">
+            <p>If you'd like to get in touch with me for opportunities or collaborations, feel free to reach out!</p>
+            <p>Email: <a href="mailto:harikat755@gmail.com">harikat755@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Harika. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
